@@ -2,13 +2,12 @@ server:
   port: 80
 
 
-
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://116.62.63.151:3316/test_osx
-    username: nyk
-    password: r88888
+    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:springboot_demo}
+    username: ${MYSQL_USERNAME}
+    password: ${MySQL_PASSWORD}
   mvc:
     view:
       suffix: .html
