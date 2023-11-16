@@ -1,15 +1,12 @@
 package com.tencent.wxcloudrun.service;
 
+import com.tencent.wxcloudrun.dto.SubscribeRequest;
 import com.tencent.wxcloudrun.model.Counter;
 
 import java.util.Optional;
-import java.util.List;
 
-public interface CounterService {
+public interface SubscribeService {
 
-  Optional<Counter> getCounter(Integer id);
+  void upsertSubscribe(SubscribeRequest subscribeRequest);
 
-  void upsertCount(Counter counter);
-
-  void clearCount(Integer id);
 }

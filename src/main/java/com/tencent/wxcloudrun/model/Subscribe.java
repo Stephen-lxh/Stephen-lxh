@@ -1,18 +1,19 @@
-package com.tencent.wxcloudrun.dto;
+package com.tencent.wxcloudrun.model;
 
+import com.tencent.wxcloudrun.dto.SubscribeItemRequest;
 import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class SubscribeRequest {
+public class Subscribe {
 
-  private String ToUserName;
-  private String FromUserName;
-  private String CreateTime;
-  private String MsgType;
-  private String Event;
-  private List<SubscribeItemRequest> List;
+  private String toUserName;
+  private String fromUserName;
+  private String createTime;
+  private String msgType;
+  private String event;
+  private String list;
 
 
 }
