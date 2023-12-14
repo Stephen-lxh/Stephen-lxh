@@ -5,9 +5,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://116.62.63.151:3316/test_osx
-    username: nyk
-    password: r88888
+    url: jdbc:mysql://rm-bp155162txb9055txo.mysql.rds.aliyuncs.com:3336/osx_db
+    username: dk_db
+    password: N6k5om4tjOWuxyk3
   mvc:
     view:
       suffix: .html
