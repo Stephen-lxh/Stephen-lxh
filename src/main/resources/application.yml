@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://rm-bp155162txb9055txo.mysql.rds.aliyuncs.com:3336/osx_db
+    url: jdbc:mysql://rm-bp155162txb9055txo.mysql.rds.aliyuncs.com:3336/osx_db?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: dk_db
     password: N6k5om4tjOWuxyk3
   mvc:
